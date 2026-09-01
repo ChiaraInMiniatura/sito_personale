@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestionale prenotazioni campi da padel — Chiara Grillo</title>
+<meta name="description" content="Case study: gestionale prenotazioni per un centro sportivo di padel, sviluppato in PHP OOP/PDO e MySQL, con gestione calendario, statistiche e anagrafica clienti.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header__inner">
+    <a href="../index.html#top" class="logo">&lt;Chiara Grillo/&gt;</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="../index.html#servizi">Servizi</a>
+      <a href="../index.html#portfolio">Portfolio</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+    <a href="../index.html#contatti" class="btn btn--primary btn--small">Richiedi un preventivo</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="container">
+    <a href="../index.html#portfolio" class="case-detail__back">&larr; Torna al portfolio</a>
+  </div>
+
+  <section class="case-hero">
+    <div class="container">
+      <p class="eyebrow">Case study · Gestionale</p>
+      <h1>Pinea Padel — gestionale campi da padel</h1>
+      <p>Un centro sportivo che gestisce campi da padel deve controllare disponibilità, prenotazioni e anagrafica clienti senza affidarsi a fogli Excel o processi manuali — con in più un problema specifico di questo sport in Italia: tenere traccia di certificati medici e tessere FITP in scadenza, per sapere sempre chi può giocare e chi deve rinnovare. Ho costruito un'applicazione full-stack in PHP orientato agli oggetti, con MySQL, per coprire tutto questo in un unico gestionale.</p>
+      <div class="case-shot">
+        <img src="../screenshot/padel/hero.jpg" alt="Homepage del gestionale Pinea Padel">
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Il contesto</h2>
+      <p>La gestione manuale di orari e campi è soggetta a doppie prenotazioni e fraintendimenti. Senza uno strumento dedicato, il centro non ha visibilità su quali clienti hanno certificato medico o tessera FITP scaduti, né statistiche sull'utilizzo dei campi utili a decisioni gestionali — ad esempio valutare nuovi orari o promozioni nelle fasce meno richieste. Il gestionale è pensato per essere usato da reception/segreteria su schermo desktop, dove viene gestita la maggior parte delle prenotazioni e dell'anagrafica: l'interfaccia è ottimizzata per quell'uso, non per il mobile.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Calendario e prenotazioni</h2>
+      <p>Una vista calendario per campo e data permette di vedere subito la disponibilità, assegnare i giocatori a ogni prenotazione e prevenire sovrapposizioni tra fasce orarie.</p>
+      <div class="case-shot">
+        <img src="../screenshot/padel/calendario.jpg" alt="Vista calendario con le prenotazioni di un sabato tipo">
+      </div>
+      <p class="case-shot__caption">Vista giornaliera per campo, con i giocatori assegnati a ogni prenotazione.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Statistiche</h2>
+      <p>Una dashboard aiuta il gestore a capire l'andamento dell'attività — prenotazioni per mese, giorni della settimana e fasce orarie più richieste — invece di doverlo dedurre a occhio da un registro cartaceo.</p>
+      <div class="case-shot">
+        <img src="../screenshot/padel/statistiche-kpi.jpg" alt="KPI principali e andamento mensile delle prenotazioni">
+      </div>
+      <div class="case-shot">
+        <img src="../screenshot/padel/statistiche-grafici.jpg" alt="Grafici di giorni e fasce orarie più richiesti">
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Anagrafica clienti</h2>
+      <p>Nel padel agonistico/FITP ogni giocatore deve avere certificato medico e tessera FITP validi. Il gestionale evidenzia in rosso le scadenze passate, così lo staff non deve controllare manualmente cliente per cliente, e permette di filtrare e cercare l'anagrafica.</p>
+      <div class="case-shot">
+        <img src="../screenshot/padel/clienti-filtri.jpg" alt="Anagrafica clienti con filtri di ricerca">
+      </div>
+      <div class="case-shot">
+        <img src="../screenshot/padel/clienti-scadenze.jpg" alt="Scadenze di certificato medico e tessera FITP, evidenziate in rosso quando scadute">
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Stack tecnico</h2>
+      <span class="tag">PHP OOP · PDO · MySQL · Bootstrap 5</span>
+    </div>
+  </section>
+
+  <section class="case-cta">
+    <div class="container">
+      <h2 class="section-title">Un progetto simile da realizzare?</h2>
+      <p>Parliamone.</p>
+      <a href="../index.html#contatti" class="btn btn--primary">Scrivimi</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <p>&copy; 2026 Chiara Grillo — Sviluppatrice freelance</p>
+    <nav class="footer__links" aria-label="Link footer">
+      <a href="../index.html#servizi">Servizi</a>
+      <a href="../index.html#portfolio">Portfolio</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

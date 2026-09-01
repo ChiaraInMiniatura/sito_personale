@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chiara — Sviluppatrice freelance</title>
+<meta name="description" content="Siti, gestionali e strumenti su misura per attività locali. Sviluppo web freelance in Sicilia.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container header__inner">
+    <a href="#top" class="logo">&lt;Chiara Grillo/&gt;</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#servizi">Servizi</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="#contatti" class="btn btn--primary btn--small">Richiedi un preventivo</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__content">
+        <p class="eyebrow">&lt;sviluppatrice web /&gt; · Sicilia</p>
+        <h1 class="hero__title">Il tuo negozio, il tuo studio, la tua attività — raccontati <span class="highlight">anche a chi ha vent'anni</span>.</h1>
+        <p class="hero__subtitle">Sviluppo siti, gestionali e strumenti su misura per attività locali. Ti aiuto a parlare un linguaggio digitale che i clienti più giovani riconoscono, senza stravolgere quello che ti ha fatto conoscere.</p>
+        <div class="hero__ctas">
+          <a href="#contatti" class="btn btn--primary">Parliamo del tuo progetto</a>
+          <a href="#portfolio" class="btn btn--outline">Guarda i progetti</a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="ring" role="group" aria-label="Statistiche scherzose del mio lavoro — passa il mouse o tocca uno spicchio">
+          <svg class="ring__svg" viewBox="-220 -220 440 440" width="380" height="380" aria-hidden="true">
+            <path class="segment active" data-i="0" fill="#ff2ec4"
+              d="M 0,-170 A170,170 0 0 1 170,0 L125,0 A125,125 0 0 0 0,-125 Z"
+              tabindex="0" role="button" aria-label="247, caffè bevuti"></path>
+            <path class="segment dim" data-i="1" fill="#2be8d0"
+              d="M 170,0 A170,170 0 0 1 0,170 L0,125 A125,125 0 0 0 125,0 Z"
+              tabindex="0" role="button" aria-label="1.842, bug schiacciati"></path>
+            <path class="segment dim" data-i="2" fill="#ffb703"
+              d="M 0,170 A170,170 0 0 1 -170,0 L-125,0 A125,125 0 0 0 0,125 Z"
+              tabindex="0" role="button" aria-label="12.400, righe di codice circa"></path>
+            <path class="segment dim" data-i="3" fill="#8b5cf6"
+              d="M -170,0 A170,170 0 0 1 0,-170 L0,-125 A125,125 0 0 0 -125,0 Z"
+              tabindex="0" role="button" aria-label="2, tastiere rotte"></path>
+          </svg>
+          <div class="ring__center" aria-live="polite" aria-atomic="true">
+            <span class="ring__number">247</span>
+            <span class="ring__label">caffè bevuti</span>
+          </div>
+        </div>
+        <p class="ring-hint">passa il mouse su uno spicchio</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="services" id="servizi">
+    <div class="container">
+      <h2 class="section-title">Servizi</h2>
+      <div class="services__grid">
+
+        <article class="service-card" style="--accent:#ff2ec4">
+          <div class="service-card__bar"></div>
+          <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="6" y="9" width="36" height="26" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 15h36" stroke="currentColor" stroke-width="2"/>
+            <circle cx="10.5" cy="12" r="1.2" fill="currentColor"/>
+            <circle cx="14" cy="12" r="1.2" fill="currentColor"/>
+            <path d="M16 41h16M24 35v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <h3>Siti vetrina &amp; landing</h3>
+          <p>Un sito veloce, chiaro e curato nei dettagli: la prima impressione che oggi si forma in pochi secondi, anche su mobile.</p>
+        </article>
+
+        <article class="service-card" style="--accent:#2be8d0">
+          <div class="service-card__bar"></div>
+          <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <ellipse cx="24" cy="11" rx="15" ry="5" stroke="currentColor" stroke-width="2"/>
+            <path d="M9 11v13c0 2.8 6.7 5 15 5s15-2.2 15-5V11" stroke="currentColor" stroke-width="2"/>
+            <path d="M9 24v13c0 2.8 6.7 5 15 5s15-2.2 15-5V24" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <h3>Gestionali su misura</h3>
+          <p>Applicazioni pensate sul tuo flusso di lavoro reale: prenotazioni, anagrafiche, gestione interna. Niente funzioni che non userai mai.</p>
+        </article>
+
+        <article class="service-card" style="--accent:#ffb703">
+          <div class="service-card__bar"></div>
+          <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M29 8l4 4-15 15-5.5 1.5L14 23z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M26 11l4 4" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 34h20M10 40h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <h3>Manutenzione &amp; evoluzione</h3>
+          <p>Il sito non finisce alla consegna. Aggiornamenti, piccole modifiche e nuove funzionalità quando la tua attività cresce.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio__grid">
+
+        <article class="case-card">
+          <div class="case-card__media">
+            <img src="screenshot/padel/hero.jpg" alt="Homepage del gestionale Pinea Padel" loading="lazy">
+          </div>
+          <div class="case-card__body">
+            <span class="tag">PHP OOP · PDO · MySQL · Bootstrap 5</span>
+            <h3>Gestionale prenotazioni campi da padel</h3>
+            <p>Sistema di prenotazione per un centro sportivo: calendario disponibilità, gestione utenti e prenotazioni in tempo reale. Il progetto che mi ha aperto la porta della collaborazione con Talentform/ATON.</p>
+            <a href="progetti/padel.html" class="case-card__link">Vedi il progetto &rarr;</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-card__media">
+            <!-- TODO: sostituire con screenshot reale del gestionale LIDA -->
+            <span>Screenshot in arrivo</span>
+          </div>
+          <div class="case-card__body">
+            <span class="tag">React</span>
+            <h3>Gestionale rifugio animali — LIDA Catania</h3>
+            <p>Anagrafica animali e dati clinici per il rifugio LIDA Catania. In arrivo promemoria vaccinazioni e storico trattamenti.</p>
+            <!-- TODO: aggiungere link a repo/demo se disponibile -->
+            <a href="#" class="case-card__link">Vedi il progetto &rarr;</a>
+          </div>
+        </article>
+
+        <article class="case-card case-card--placeholder">
+          <div class="case-card__body case-card__body--placeholder">
+            <span class="tag tag--outline">Concept · Front-end</span>
+            <h3>In lavorazione</h3>
+            <p>Un nuovo progetto è in cantiere — presto qui i dettagli.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="chi-sono">
+    <div class="container about__inner">
+      <div class="about__photo">
+        <!-- TODO: sostituire con foto reale -->
+        <span>Foto</span>
+      </div>
+      <div class="about__text">
+        <h2 class="section-title">Chi sono</h2>
+        <p>Sono Chiara Grillo, sviluppatrice freelance in Sicilia. Lavoro soprattutto con attività locali che vogliono fare un salto di qualità digitale senza perdere la loro identità.</p>
+        <p>Codice pulito, comunicazione diretta, niente giri di parole tecniche quando non servono.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contatti">
+    <div class="container contact__inner">
+      <h2 class="section-title">Hai un progetto in mente?</h2>
+      <p>Raccontamelo — rispondo sempre.</p>
+      <a href="mailto:chiarag295@gmail.com" class="btn btn--primary">Scrivimi</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <p>&copy; 2026 Chiara Grillo — Sviluppatrice freelance</p>
+    <nav class="footer__links" aria-label="Link footer">
+      <a href="#servizi">Servizi</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
