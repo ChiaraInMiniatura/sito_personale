@@ -461,12 +461,13 @@ html.js-ready .ring-hint { display: block; }
   border-radius: var(--radius-card);
   background: var(--surface);
   border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-secondary);
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .about__text p { color: var(--text-secondary); max-width: 60ch; }
 

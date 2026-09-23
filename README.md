@@ -16,6 +16,8 @@ screenshot/
   padel/               screenshot del gestionale padel
   frida/               screenshot dell'app Frida
   ponti/                screenshot del sito Fondazione Ponti
+img/
+  chiara.jpg            foto reale per la sezione "Chi sono"
 ```
 
 ## Design
@@ -33,9 +35,9 @@ L'hero include un anello SVG interattivo a quattro spicchi con alcune statistich
 - Menu di navigazione a hamburger sotto i 780px (index e case study): pannello a tendina con i link e il CTA "Richiedi un preventivo", apertura/chiusura via click sull'icona, un link, Esc o click fuori dal pannello. Desktop resta invariato.
 - Case study dedicato a Fondazione Ponti (sito per fondazione umanitaria fittizia), collegato dalla relativa card in portfolio.
 - Sezione "Linguaggi e strumenti" in home (tra "Chi sono" e "Contatti"): carosello a scorrimento automatico (loop infinito, pausa al passaggio del mouse) con i loghi di HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap 5, Git, React, Vue.js, WordPress, tutti allo stesso livello (nessuna distinzione tra competenze consolidate e in apprendimento — sostituisce una prima versione a due gruppi di tag testuali, mai andata online).
+- Foto reale nella sezione "Chi sono" (`img/chiara.jpg`), al posto del placeholder.
 
 **Da completare:**
-- Foto reale per la sezione "Chi sono".
 - Tag stack tecnico della card LIDA in home ancora "React": da valutare se aggiornarlo a "Next.js" per coerenza con la case study.
 
 **Note di presentazione:**
