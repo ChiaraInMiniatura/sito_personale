@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sito per fondazione umanitaria (progetto di pratica) · Chiara Grillo</title>
+<meta name="description" content="Case study: sito vetrina per una fondazione umanitaria fittizia, con archivio progetti filtrabile e form di donazione. Progetto di pratica personale.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header__inner">
+    <a href="../index.html#top" class="logo">&lt;Chiara Grillo/&gt;</a>
+    <nav class="nav" id="site-nav" aria-label="Navigazione principale">
+      <a href="../index.html#servizi">Servizi</a>
+      <a href="../index.html#portfolio">Portfolio</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+      <a href="../index.html#contatti" class="btn btn--primary btn--small nav__cta">Richiedi un preventivo</a>
+    </nav>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Apri il menu">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+    <a href="../index.html#contatti" class="btn btn--primary btn--small header__cta">Richiedi un preventivo</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="container">
+    <a href="../index.html#portfolio" class="case-detail__back">&larr; Torna al portfolio</a>
+  </div>
+
+  <section class="case-hero">
+    <div class="container">
+      <p class="eyebrow">Case study · Sito no-profit (progetto di pratica)</p>
+      <h1>Fondazione Ponti: sito per una fondazione umanitaria fittizia</h1>
+      <p>Sito vetrina per una fondazione umanitaria immaginaria con sede a Napoli. L'ho costruito come esercizio personale, per allenarmi in vista di un incarico vero con un'agenzia che realizza soprattutto siti per fondazioni ed enti no-profit: non è online e non ha uno scopo commerciale reale.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="case-shot">
+      <img src="../screenshot/ponti/homepage-hero.jpg" alt="Homepage di Fondazione Ponti, con titolo, due pulsanti di call to action e le aree di intervento">
+      <p class="case-shot__caption">Homepage: presentazione della fondazione e primo accesso alle aree di intervento.</p>
+    </div>
+  </div>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Il contesto</h2>
+      <p>Un sito per una fondazione deve mettere subito in chiaro cosa fa l'organizzazione e permettere a chi visita di arrivare in pochi passaggi a donare o a candidarsi come volontario. Serve anche un archivio dei progetti consultabile per area di intervento, per chi vuole approfondire prima di decidere se sostenere l'organizzazione. Ho impostato il sito su WordPress con struttura Bedrock, in modo che i contenuti (progetti, aree di intervento) restino gestibili da chi cura il sito senza dover toccare il codice.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Archivio progetti filtrabile</h2>
+      <p>La pagina archivio mostra tutti i progetti della fondazione, filtrabili per area di intervento (Ambiente, Infanzia, Salute) senza ricaricare la pagina. Il filtro è l'unico componente interattivo Vue del sito: si appoggia al contenuto già renderizzato da WordPress e ne mostra o nasconde porzioni, invece di richiedere di nuovo i dati al server. La pagina resta quindi consultabile anche senza JavaScript attivo.</p>
+      <div class="case-shot">
+        <img src="../screenshot/ponti/archivio-filtro-ambiente.jpg" alt="Archivio progetti filtrato per area Ambiente, con tre progetti mostrati: orti urbani condivisi, riforestazione urbana, pulizia costiera">
+        <p class="case-shot__caption">Archivio filtrato sull'area "Ambiente".</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Progetti in evidenza e donazione</h2>
+      <p>In homepage compaiono alcuni progetti in evidenza tra le diverse aree, con link alla pagina di dettaglio e da lì alla donazione. Ho scelto di rendere la donazione dichiaratamente simbolica, segnalato in pagina: un'integrazione di pagamento vera avrebbe richiesto conformità PCI-DSS, fuori scopo per un progetto dimostrativo come questo. Anche il conteggio progetti per area è reale (calcolato sui progetti effettivamente presenti), a differenza di un mockup iniziale che prevedeva statistiche globali inventate: le ho tolte perché con solo 6 progetti reali sarebbero state fuori luogo.</p>
+      <div class="case-shot">
+        <img src="../screenshot/ponti/progetti-in-evidenza.jpg" alt="Sezione progetti in evidenza in homepage, con tre card: orti urbani condivisi, screening gratuiti, ambulatorio mobile">
+        <p class="case-shot__caption">Progetti in evidenza in homepage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Candidature volontari</h2>
+      <p>Oltre alla donazione, il sito ha un form di candidatura per chi vuole proporsi come volontario, con validazione e protezione anti-spam. I dati inviati non diventano contenuto pubblico del sito: restano visibili solo in un'area riservata.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Anche in versione mobile</h2>
+      <p>Il menu di navigazione è esteso su desktop e a comparsa (hamburger) su mobile, con lo stesso archivio progetti e la stessa homepage adattati alla larghezza dello schermo.</p>
+      <div class="case-shot-row">
+        <div class="case-shot case-shot--phone">
+          <img src="../screenshot/ponti/mobile-homepage.png" alt="Homepage di Fondazione Ponti in versione mobile, con menu a comparsa">
+        </div>
+        <div class="case-shot case-shot--phone">
+          <img src="../screenshot/ponti/mobile-archivio-filtro.png" alt="Archivio progetti filtrato per area Ambiente in versione mobile">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Stack tecnico</h2>
+      <span class="tag">PHP 8.2 · WordPress (Bedrock) · Sage + Acorn · Tailwind CSS v4 · Vite · Vue 3</span>
+    </div>
+  </section>
+
+  <section class="case-cta">
+    <div class="container">
+      <h2 class="section-title">Un progetto simile da realizzare?</h2>
+      <p>Parliamone.</p>
+      <a href="../index.html#contatti" class="btn btn--primary">Scrivimi</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <p>&copy; 2026 Chiara Grillo · Sviluppatrice freelance</p>
+    <nav class="footer__links" aria-label="Link footer">
+      <a href="../index.html#servizi">Servizi</a>
+      <a href="../index.html#portfolio">Portfolio</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

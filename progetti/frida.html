@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestionale rifugio animali LIDA Catania · Chiara Grillo</title>
+<meta name="description" content="Case study: Frida, l'applicazione web usata dal rifugio LIDA Catania per anagrafica animali, cartelle cliniche e scadenze, sviluppata in Next.js.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header__inner">
+    <a href="../index.html#top" class="logo">&lt;Chiara Grillo/&gt;</a>
+    <nav class="nav" id="site-nav" aria-label="Navigazione principale">
+      <a href="../index.html#servizi">Servizi</a>
+      <a href="../index.html#portfolio">Portfolio</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+      <a href="../index.html#contatti" class="btn btn--primary btn--small nav__cta">Richiedi un preventivo</a>
+    </nav>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Apri il menu">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+    <a href="../index.html#contatti" class="btn btn--primary btn--small header__cta">Richiedi un preventivo</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="container">
+    <a href="../index.html#portfolio" class="case-detail__back">&larr; Torna al portfolio</a>
+  </div>
+
+  <section class="case-hero">
+    <div class="container">
+      <p class="eyebrow">Case study · Gestionale</p>
+      <h1>Frida: gestionale per il rifugio LIDA Catania</h1>
+      <p>Un rifugio che ospita più animali contemporaneamente deve tenere traccia in modo affidabile di anagrafica, stato clinico e scadenze di ciascuno, spesso con più volontari che si alternano e non sempre con dimestichezza tecnica. Ho costruito Frida, l'applicazione web usata dal rifugio LIDA Catania per questo: mobile-first, con un'interfaccia semplice pensata anche per chi non è abituato a strumenti digitali complessi, e installabile come app sul telefono.</p>
+      <div class="case-shot case-shot--phone">
+        <img src="../screenshot/frida/dashboard.jpg" alt="Dashboard di Frida con i farmaci da somministrare del giorno">
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Il contesto</h2>
+      <p>Un rifugio con più animali, gestito da più volontari, ha bisogno di un'anagrafica condivisa e di scadenze di vaccinazioni e trattamenti che non vadano perse. Lo strumento deve essere semplice da usare per chiunque presti servizio, non solo per chi è pratico di tecnologia.</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Anagrafica animali</h2>
+      <p>L'inserimento di un nuovo animale avviene tramite un form con campi ampi ed etichette chiare (nome, specie, sesso, razza, sterilizzazione, microchip, data di nascita, descrizione, note, foto). L'elenco animali è filtrabile per nome, razza, stato (disponibile, in affido, adottato) e specie.</p>
+      <div class="case-shot-row">
+        <div class="case-shot case-shot--phone">
+          <img src="../screenshot/frida/lista-animali.jpg" alt="Elenco animali con filtri per nome, razza, stato e specie">
+        </div>
+        <div class="case-shot case-shot--phone">
+          <img src="../screenshot/frida/nuovo-animale-form.jpg" alt="Form di inserimento di un nuovo animale, con campi ampi ed etichette chiare">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Cartella clinica e scadenze</h2>
+      <p>Ogni animale ha uno storico di vaccinazioni, antiparassitari, visite veterinarie e terapie. Per gli eventi ricorrenti la prossima scadenza è calcolata automaticamente; quando una scadenza è superata, viene evidenziata in rosso nella scheda dell'animale, così chi presta servizio vede subito chi ha bisogno di attenzione senza dover controllare manualmente animale per animale.</p>
+      <div class="case-shot-aside">
+        <div class="case-shot case-shot--phone">
+          <img src="../screenshot/frida/dettaglio-cartella-clinica.jpg" alt="Scheda clinica di un animale con un evento vaccino e la scadenza del richiamo evidenziata in rosso perché superata">
+        </div>
+        <p class="case-shot__caption case-shot__caption--aside">Le scadenze superate sono evidenziate in rosso nella scheda di ogni animale.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Pensata per chi la usa ogni giorno</h2>
+      <p>Frida è progettata prima per lo smartphone, con testo leggibile e layout semplice, pensata anche per volontari meno abituati alla tecnologia. È installabile come app sul telefono dal menu di navigazione, così si apre come un'app qualsiasi senza passare dal browser ogni volta.</p>
+      <div class="case-shot case-shot--phone">
+        <img src="../screenshot/frida/menu-aperto.jpg" alt="Menu di navigazione di Frida, con la voce Installa l'app">
+      </div>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <div class="container">
+      <h2>Stack tecnico</h2>
+      <span class="tag">Next.js · NextAuth · PWA</span>
+    </div>
+  </section>
+
+  <section class="case-cta">
+    <div class="container">
+      <h2 class="section-title">Un progetto simile da realizzare?</h2>
+      <p>Parliamone.</p>
+      <a href="../index.html#contatti" class="btn btn--primary">Scrivimi</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <p>&copy; 2026 Chiara Grillo · Sviluppatrice freelance</p>
+    <nav class="footer__links" aria-label="Link footer">
+      <a href="../index.html#servizi">Servizi</a>
+      <a href="../index.html#portfolio">Portfolio</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

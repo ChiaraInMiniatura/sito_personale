@@ -144,8 +144,61 @@ body::before {
 }
 .nav a:hover { color: var(--text); }
 
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.nav-toggle__bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--text);
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav__cta { display: none; }
+
 @media (max-width: 780px) {
-  .nav { display: none; }
+  .header__cta { display: none; }
+  .nav-toggle { display: flex; }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 24px 20px;
+  }
+  .nav.is-open { display: flex; }
+  .nav a:not(.nav__cta) {
+    padding: 0.6em 0;
+    border-top: 1px solid var(--border);
+  }
+  .nav a:first-child { border-top: none; }
+  .nav__cta {
+    display: inline-flex;
+    margin-top: 12px;
+    align-self: flex-start;
+  }
 }
 
 /* ==========================================================================
@@ -314,7 +367,7 @@ html.js-ready .ring-hint { display: block; }
 .portfolio { padding: 80px 0; }
 .portfolio__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
 .case-card {
@@ -517,4 +570,86 @@ html.js-ready .ring-hint { display: block; }
 .case-cta p {
   color: var(--text-secondary);
   margin-bottom: 2rem;
+}
+
+/* Screenshot mobile (case study Frida): larghezza fissa invece di
+   riempire tutto il container, altrimenti vengono stirati e sgranati */
+.case-shot--phone {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-shot--phone .case-shot__caption {
+  text-align: center;
+}
+
+.case-shot-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.case-shot-row .case-shot--phone {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* la regola .case-shot + .case-shot (da MOD2) aggiunge margin-top tra
+   screenshot impilati: dentro una riga affiancata non deve applicarsi,
+   ci pensa già il gap del flex */
+.case-shot-row .case-shot + .case-shot {
+  margin-top: 0;
+}
+
+/* Anteprima a logo per la card LIDA in home, invece dello screenshot
+   a piena larghezza usato dalla card padel */
+.case-card__media--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  padding: 26px;
+}
+
+.case-card__media--logo img {
+  width: auto;
+  height: auto;
+  max-width: 68%;
+  max-height: 68%;
+  object-fit: contain;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+}
+
+.case-shot-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.case-shot-aside .case-shot--phone {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.case-shot-aside .case-shot__caption--aside {
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .case-shot-aside {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .case-shot-aside .case-shot__caption--aside {
+    text-align: left;
+    max-width: 260px;
+  }
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chiara — Sviluppatrice freelance</title>
+<title>Chiara Grillo · Sviluppatrice freelance</title>
 <meta name="description" content="Siti, gestionali e strumenti su misura per attività locali. Sviluppo web freelance in Sicilia.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +17,19 @@
 <header class="site-header" id="top">
   <div class="container header__inner">
     <a href="#top" class="logo">&lt;Chiara Grillo/&gt;</a>
-    <nav class="nav" aria-label="Navigazione principale">
+    <nav class="nav" id="site-nav" aria-label="Navigazione principale">
       <a href="#servizi">Servizi</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#chi-sono">Chi sono</a>
       <a href="#contatti">Contatti</a>
+      <a href="#contatti" class="btn btn--primary btn--small nav__cta">Richiedi un preventivo</a>
     </nav>
-    <a href="#contatti" class="btn btn--primary btn--small">Richiedi un preventivo</a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Apri il menu">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+    <a href="#contatti" class="btn btn--primary btn--small header__cta">Richiedi un preventivo</a>
   </div>
 </header>
 
@@ -34,8 +40,8 @@
 
       <div class="hero__content">
         <p class="eyebrow">&lt;sviluppatrice web /&gt; · Sicilia</p>
-        <h1 class="hero__title">Il tuo negozio, il tuo studio, la tua attività — raccontati <span class="highlight">anche a chi ha vent'anni</span>.</h1>
-        <p class="hero__subtitle">Sviluppo siti, gestionali e strumenti su misura per attività locali. Ti aiuto a parlare un linguaggio digitale che i clienti più giovani riconoscono, senza stravolgere quello che ti ha fatto conoscere.</p>
+        <h1 class="hero__title">Il tuo negozio, il tuo studio, la tua attività.</h1>
+        <p class="hero__subtitle">Sviluppo siti, gestionali e strumenti su misura per attività locali: chiari, veloci e curati nei dettagli, senza stravolgere quello che ti ha fatto conoscere.</p>
         <div class="hero__ctas">
           <a href="#contatti" class="btn btn--primary">Parliamo del tuo progetto</a>
           <a href="#portfolio" class="btn btn--outline">Guarda i progetti</a>
@@ -43,7 +49,7 @@
       </div>
 
       <div class="hero__visual">
-        <div class="ring" role="group" aria-label="Statistiche scherzose del mio lavoro — passa il mouse o tocca uno spicchio">
+        <div class="ring" role="group" aria-label="Statistiche scherzose del mio lavoro: passa il mouse o tocca uno spicchio">
           <svg class="ring__svg" viewBox="-220 -220 440 440" width="380" height="380" aria-hidden="true">
             <path class="segment active" data-i="0" fill="#ff2ec4"
               d="M 0,-170 A170,170 0 0 1 170,0 L125,0 A125,125 0 0 0 0,-125 Z"
@@ -131,24 +137,26 @@
         </article>
 
         <article class="case-card">
-          <div class="case-card__media">
-            <!-- TODO: sostituire con screenshot reale del gestionale LIDA -->
-            <span>Screenshot in arrivo</span>
+          <div class="case-card__media case-card__media--logo">
+            <img src="screenshot/frida/logo.png" alt="Logo dell'app Frida">
           </div>
           <div class="case-card__body">
             <span class="tag">React</span>
-            <h3>Gestionale rifugio animali — LIDA Catania</h3>
+            <h3>Gestionale rifugio animali LIDA Catania</h3>
             <p>Anagrafica animali e dati clinici per il rifugio LIDA Catania. In arrivo promemoria vaccinazioni e storico trattamenti.</p>
-            <!-- TODO: aggiungere link a repo/demo se disponibile -->
-            <a href="#" class="case-card__link">Vedi il progetto &rarr;</a>
+            <a href="progetti/frida.html" class="case-card__link">Vedi il progetto &rarr;</a>
           </div>
         </article>
 
-        <article class="case-card case-card--placeholder">
-          <div class="case-card__body case-card__body--placeholder">
-            <span class="tag tag--outline">Concept · Front-end</span>
-            <h3>In lavorazione</h3>
-            <p>Un nuovo progetto è in cantiere — presto qui i dettagli.</p>
+        <article class="case-card">
+          <div class="case-card__media">
+            <img src="screenshot/ponti/homepage-hero.jpg" alt="Homepage del sito Fondazione Ponti" loading="lazy">
+          </div>
+          <div class="case-card__body">
+            <span class="tag">WordPress (Bedrock) · Vue 3 · Tailwind</span>
+            <h3>Sito per fondazione umanitaria (progetto di pratica)</h3>
+            <p>Sito vetrina per la Fondazione Ponti, organizzazione fittizia creata per allenarmi prima di un incarico vero: archivio progetti filtrabile per area di intervento, pagina donazioni e candidatura volontari, menu responsive.</p>
+            <a href="progetti/ponti.html" class="case-card__link">Vedi il progetto &rarr;</a>
           </div>
         </article>
 
@@ -173,7 +181,7 @@
   <section class="contact" id="contatti">
     <div class="container contact__inner">
       <h2 class="section-title">Hai un progetto in mente?</h2>
-      <p>Raccontamelo — rispondo sempre.</p>
+      <p>Raccontamelo, rispondo sempre.</p>
       <a href="mailto:chiarag295@gmail.com" class="btn btn--primary">Scrivimi</a>
     </div>
   </section>
@@ -182,7 +190,7 @@
 
 <footer class="site-footer">
   <div class="container footer__inner">
-    <p>&copy; 2026 Chiara Grillo — Sviluppatrice freelance</p>
+    <p>&copy; 2026 Chiara Grillo · Sviluppatrice freelance</p>
     <nav class="footer__links" aria-label="Link footer">
       <a href="#servizi">Servizi</a>
       <a href="#portfolio">Portfolio</a>

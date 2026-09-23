@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gestionale prenotazioni campi da padel — Chiara Grillo</title>
+<title>Gestionale prenotazioni campi da padel · Chiara Grillo</title>
 <meta name="description" content="Case study: gestionale prenotazioni per un centro sportivo di padel, sviluppato in PHP OOP/PDO e MySQL, con gestione calendario, statistiche e anagrafica clienti.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +17,19 @@
 <header class="site-header">
   <div class="container header__inner">
     <a href="../index.html#top" class="logo">&lt;Chiara Grillo/&gt;</a>
-    <nav class="nav" aria-label="Navigazione principale">
+    <nav class="nav" id="site-nav" aria-label="Navigazione principale">
       <a href="../index.html#servizi">Servizi</a>
       <a href="../index.html#portfolio">Portfolio</a>
       <a href="../index.html#chi-sono">Chi sono</a>
       <a href="../index.html#contatti">Contatti</a>
+      <a href="../index.html#contatti" class="btn btn--primary btn--small nav__cta">Richiedi un preventivo</a>
     </nav>
-    <a href="../index.html#contatti" class="btn btn--primary btn--small">Richiedi un preventivo</a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Apri il menu">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+    <a href="../index.html#contatti" class="btn btn--primary btn--small header__cta">Richiedi un preventivo</a>
   </div>
 </header>
 
@@ -36,8 +42,8 @@
   <section class="case-hero">
     <div class="container">
       <p class="eyebrow">Case study · Gestionale</p>
-      <h1>Pinea Padel — gestionale campi da padel</h1>
-      <p>Un centro sportivo che gestisce campi da padel deve controllare disponibilità, prenotazioni e anagrafica clienti senza affidarsi a fogli Excel o processi manuali — con in più un problema specifico di questo sport in Italia: tenere traccia di certificati medici e tessere FITP in scadenza, per sapere sempre chi può giocare e chi deve rinnovare. Ho costruito un'applicazione full-stack in PHP orientato agli oggetti, con MySQL, per coprire tutto questo in un unico gestionale.</p>
+      <h1>Pinea Padel: gestionale campi da padel</h1>
+      <p>Un centro sportivo che gestisce campi da padel deve controllare disponibilità, prenotazioni e anagrafica clienti senza affidarsi a fogli Excel o processi manuali. C'è poi un problema specifico di questo sport in Italia: tenere traccia di certificati medici e tessere FITP in scadenza, per sapere sempre chi può giocare e chi deve rinnovare. Ho costruito un'applicazione full-stack in PHP orientato agli oggetti, con MySQL, per coprire tutto questo in un unico gestionale.</p>
       <div class="case-shot">
         <img src="../screenshot/padel/hero.jpg" alt="Homepage del gestionale Pinea Padel">
       </div>
@@ -47,7 +53,7 @@
   <section class="case-section">
     <div class="container">
       <h2>Il contesto</h2>
-      <p>La gestione manuale di orari e campi è soggetta a doppie prenotazioni e fraintendimenti. Senza uno strumento dedicato, il centro non ha visibilità su quali clienti hanno certificato medico o tessera FITP scaduti, né statistiche sull'utilizzo dei campi utili a decisioni gestionali — ad esempio valutare nuovi orari o promozioni nelle fasce meno richieste. Il gestionale è pensato per essere usato da reception/segreteria su schermo desktop, dove viene gestita la maggior parte delle prenotazioni e dell'anagrafica: l'interfaccia è ottimizzata per quell'uso, non per il mobile.</p>
+      <p>La gestione manuale di orari e campi è soggetta a doppie prenotazioni e fraintendimenti. Senza uno strumento dedicato, il centro non ha visibilità su quali clienti hanno certificato medico o tessera FITP scaduti, né statistiche sull'utilizzo dei campi utili a decisioni gestionali, ad esempio valutare nuovi orari o promozioni nelle fasce meno richieste. Il gestionale è pensato per essere usato da reception/segreteria su schermo desktop, dove viene gestita la maggior parte delle prenotazioni e dell'anagrafica: l'interfaccia è ottimizzata per quell'uso, non per il mobile.</p>
     </div>
   </section>
 
@@ -65,7 +71,7 @@
   <section class="case-section">
     <div class="container">
       <h2>Statistiche</h2>
-      <p>Una dashboard aiuta il gestore a capire l'andamento dell'attività — prenotazioni per mese, giorni della settimana e fasce orarie più richieste — invece di doverlo dedurre a occhio da un registro cartaceo.</p>
+      <p>Una dashboard aiuta il gestore a capire l'andamento dell'attività (prenotazioni per mese, giorni della settimana e fasce orarie più richieste), invece di doverlo dedurre a occhio da un registro cartaceo.</p>
       <div class="case-shot">
         <img src="../screenshot/padel/statistiche-kpi.jpg" alt="KPI principali e andamento mensile delle prenotazioni">
       </div>
@@ -107,7 +113,7 @@
 
 <footer class="site-footer">
   <div class="container footer__inner">
-    <p>&copy; 2026 Chiara Grillo — Sviluppatrice freelance</p>
+    <p>&copy; 2026 Chiara Grillo · Sviluppatrice freelance</p>
     <nav class="footer__links" aria-label="Link footer">
       <a href="../index.html#servizi">Servizi</a>
       <a href="../index.html#portfolio">Portfolio</a>
