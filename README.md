@@ -32,6 +32,7 @@ L'hero include un anello SVG interattivo a quattro spicchi con alcune statistich
 - Case study dedicato a Frida (gestionale rifugio LIDA Catania), collegato dalla relativa card in portfolio.
 - Menu di navigazione a hamburger sotto i 780px (index e case study): pannello a tendina con i link e il CTA "Richiedi un preventivo", apertura/chiusura via click sull'icona, un link, Esc o click fuori dal pannello. Desktop resta invariato.
 - Case study dedicato a Fondazione Ponti (sito per fondazione umanitaria fittizia), collegato dalla relativa card in portfolio.
+- Sezione "Linguaggi e strumenti" in home (tra "Chi sono" e "Contatti"): carosello a scorrimento automatico (loop infinito, pausa al passaggio del mouse) con i loghi di HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap 5, Git, React, Vue.js, WordPress, tutti allo stesso livello (nessuna distinzione tra competenze consolidate e in apprendimento — sostituisce una prima versione a due gruppi di tag testuali, mai andata online).
 
 **Da completare:**
 - Foto reale per la sezione "Chi sono".
@@ -41,3 +42,4 @@ L'hero include un anello SVG interattivo a quattro spicchi con alcune statistich
 - Gli screenshot di Frida sono catture da mobile (l'app è mobile-first): nella case study sono mostrati in formato telefono, non a piena larghezza come quelli desktop del gestionale padel. L'anteprima della card LIDA in home usa il logo dell'app invece di uno screenshot, per lo stesso motivo di proporzioni; il logo è dimensionato più grande (68% del box) con angoli arrotondati e ombra morbida, per leggersi come scheda intenzionale sullo sfondo scuro della card invece che come ritaglio isolato.
 - La hero della home non fa più riferimento a un pubblico "giovane"/"vent'anni": il messaggio si concentra su siti e gestionali su misura per attività locali, senza inquadratura generazionale.
 - Fondazione Ponti è un progetto di pratica personale, non un cliente reale: costruito per allenarsi prima di un incarico vero con un'agenzia, non è online e non ha scopo commerciale. Lo dichiara anche il case study stesso, per trasparenza.
+- I loghi del carosello "Linguaggi e strumenti" sono in gran parte da Simple Icons (simpleicons.org); il logo CSS3 viene invece da Wikimedia Commons ("CSS3 logo.svg", licenza Creative Commons Attribution 3.0) — scelta consapevole senza nota di attribuzione visibile in pagina, segnalata qui per lasciarne traccia.

@@ -471,6 +471,59 @@ html.js-ready .ring-hint { display: block; }
 .about__text p { color: var(--text-secondary); max-width: 60ch; }
 
 /* ==========================================================================
+   Skills
+   ========================================================================== */
+.skills { padding: 80px 0; }
+.skills .section-title { margin: 0 0 2rem; }
+
+.skills-carousel {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.skills-carousel__track {
+  display: flex;
+  width: max-content;
+  gap: 48px;
+  animation: skills-scroll 26s linear infinite;
+}
+.skills-carousel:hover .skills-carousel__track {
+  animation-play-state: paused;
+}
+@keyframes skills-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skills-carousel__track { animation: none; }
+}
+
+.skill-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  width: 84px;
+}
+.skill-badge__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-soft);
+}
+.skill-badge__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
    Contact
    ========================================================================== */
 .contact { padding: 96px 0; text-align: center; }
