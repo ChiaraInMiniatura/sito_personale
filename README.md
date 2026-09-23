@@ -36,6 +36,7 @@ L'hero include un anello SVG interattivo a quattro spicchi con alcune statistich
 - Case study dedicato a Fondazione Ponti (sito per fondazione umanitaria fittizia), collegato dalla relativa card in portfolio.
 - Sezione "Linguaggi e strumenti" in home (tra "Chi sono" e "Contatti"): carosello a scorrimento automatico (loop infinito, pausa al passaggio del mouse) con i loghi di HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap 5, Git, React, Vue.js, WordPress, tutti allo stesso livello (nessuna distinzione tra competenze consolidate e in apprendimento — sostituisce una prima versione a due gruppi di tag testuali, mai andata online).
 - Foto reale nella sezione "Chi sono" (`img/chiara.jpg`), al posto del placeholder.
+- Link a GitHub (`ChiaraInMiniatura`) nel footer di tutte e 4 le pagine e come link "Altri progetti ed esperimenti su GitHub" sotto la griglia portfolio in home.
 
 **Da completare:**
 - Tag stack tecnico della card LIDA in home ancora "React": da valutare se aggiornarlo a "Next.js" per coerenza con la case study.

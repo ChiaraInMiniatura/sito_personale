@@ -471,6 +471,17 @@ html.js-ready .ring-hint { display: block; }
 }
 .about__text p { color: var(--text-secondary); max-width: 60ch; }
 
+.portfolio__more {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--magenta);
+}
+.portfolio__more:hover { text-decoration: underline; }
+
 /* ==========================================================================
    Skills
    ========================================================================== */
